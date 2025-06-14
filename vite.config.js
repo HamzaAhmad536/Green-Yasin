@@ -7,6 +7,7 @@ import pngquant from 'imagemin-pngquant';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Green-Yasin/',
   plugins: [
     react(),
     tailwindcss(),
