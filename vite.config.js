@@ -23,5 +23,4 @@ export default defineConfig({
       },
     }),
   ],
-  base: 'Green-Yasin', // !! IMPORTANT: Replace YOUR_REPO_NAME with your actual GitHub repository name !!
 });
