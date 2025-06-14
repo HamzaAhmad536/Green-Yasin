@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
 import imagemin from 'vite-plugin-imagemin';
 import mozjpeg from 'imagemin-mozjpeg';
 import pngquant from 'imagemin-pngquant';
@@ -8,9 +7,11 @@ import pngquant from 'imagemin-pngquant';
 // https://vite.dev/config/
 export default defineConfig({
   base: '/Green-Yasin/',
+  css: {
+    postcss: './postcss.config.js',
+  },
   plugins: [
     react(),
-    tailwindcss(),
     imagemin({
       gifsicle: { optimizationLevel: 7, interlaced: false },
       optipng: { optimizationLevel: 7 },
